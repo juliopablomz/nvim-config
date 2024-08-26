@@ -1,3 +1,10 @@
+" Plugins ================================================================
+set nocompatible
+
+call plug#begin()
+Plug 'bluz71/vim-moonfly-colors'
+call plug#end()
+
 " Indentation ============================================================
 set tabstop=2
 set shiftwidth=2
@@ -24,7 +31,7 @@ set fileencoding=utf-8
 
 " Aesthetics =============================================================
 
-colorscheme retrobox
+colorscheme moonfly
 syntax on
 
 " more comfortable file navigation.
