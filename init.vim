@@ -2,8 +2,18 @@
 set nocompatible
 
 call plug#begin()
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'bluz71/vim-moonfly-colors'
 call plug#end()
+
+" enable treesitter highlight.
+lua << EOF
+  require'nvim-treesitter.configs'.setup {
+    highlight = {
+      enable = true
+    }
+  }
+EOF
 
 " Indentation ============================================================
 set tabstop=2
@@ -56,7 +66,7 @@ set pumheight=10
 " use "block" cursor style in insert mode.
 set guicursor=i:block 
 
-" Usability ===============================================================
+" Usability ==============================================================
 
 " disable mouse support.
 set mouse=
@@ -65,7 +75,11 @@ set mouse=
 set splitright
 set splitbelow
 
-" Mappings ================================================================
+" ensuring that ".h/.hpp" files are treated correctly.
+autocmd BufRead,BufNewFile *.h set filetype=c
+autocmd BufRead,BufNewFile *.hpp set filetype=cpp
+
+" Mappings ===============================================================
 
 " the leader key.
 let mapleader = " "
