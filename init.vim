@@ -7,18 +7,10 @@ Plug 'bluz71/vim-moonfly-colors'
 Plug 'windwp/nvim-autopairs'
 call plug#end()
 
+" loading plugin configs
 lua << EOF
-
--- enable treesitter highlight.
-require'nvim-treesitter.configs'.setup {
-  highlight = {
-    enable = true
-  }
-}
-
--- init nvim-autopairs.
-require("nvim-autopairs").setup {}
-
+require'config.treesitter'
+require'config.autopairs'
 EOF
 
 " Indentation ============================================================
