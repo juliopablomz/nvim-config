@@ -4,15 +4,21 @@ set nocompatible
 call plug#begin()
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'bluz71/vim-moonfly-colors'
+Plug 'windwp/nvim-autopairs'
 call plug#end()
 
-" enable treesitter highlight.
 lua << EOF
-  require'nvim-treesitter.configs'.setup {
-    highlight = {
-      enable = true
-    }
+
+-- enable treesitter highlight.
+require'nvim-treesitter.configs'.setup {
+  highlight = {
+    enable = true
   }
+}
+
+-- init nvim-autopairs.
+require("nvim-autopairs").setup {}
+
 EOF
 
 " Indentation ============================================================
