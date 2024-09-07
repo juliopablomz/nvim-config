@@ -10,3 +10,11 @@ testando muitas coisas e não recomendo que você a use.
 
 **Vim-Plug** precisa ser instalado manualmente, depois 
 execute `:PlugInstall` no seu **Neovim**.
+
+## Shortcuts
+A tecla `Mod` configurada é a `<Space>`.
+
+| Keybind     | Descrição             |
+|-------------|-----------------------|
+| **Mod + w** | Salva o buffer atual. |
+| **Mod + q** | Fecha o buffer atual. |
