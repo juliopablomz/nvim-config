@@ -1,20 +1,12 @@
-# nvim-config
-This repository contains my **Neovim** configuration that I'm using at the moment.
+# Minha configuração do Neovim
+Aqui está a minha configuração atual do **Neovim**. Ainda estou 
+testando muitas coisas e não recomendo que você a use.
 
-## Installation
-First, download the dependencies (if you don't have them), and then 
-follow the installation steps below.
+## Requisitos
 
-### Dependencies
->[!NOTE]
-> I use Linux, so I configured it for Linux. I don't guarantee (and don't recommend) using this configuration outside of a Linux environment.
+* **Neovim 0.9.2**+
+* `tar` e `curl` no seu path (alternativamente, `git`)
+* Um compilador **C** no seu path e **libstdc++** instalado
 
-* **curl**
-* **neovim** *(>= v0.11.0)*
-* **vim-plug** *([manually install this plugin in your neovim](https://github.com/junegunn/vim-plug))*
-
-### Manual installation
-Download the files from the repository and extract them to `~/.config/nvim/`, or any 
-other directory you use.
-
-Then run **nvim** and type the command `:PlugInstall`. Everything should be working.
+**Vim-Plug** precisa ser instalado manualmente, depois 
+execute `:PlugInstall` no seu **Neovim**.
