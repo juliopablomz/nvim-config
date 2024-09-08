@@ -22,8 +22,14 @@ A tecla `Mod` configurada é a `<Space>`.
 | **Mod + q**      | Fecha o buffer atual.  |
 
 ### Insertion Mode
-| Keybind (CMP)    | Descrição                |
-|------------------|--------------------------|
-| **Ctrl + Space** | Abre o autocomplete.     |
-| **Ctrl + e**     | Cancela o autocomplete.  |
-| **Enter**        | Confirma o autocomplete. |
+| Keybind (nvim-cmp)    | Descrição                |
+|-----------------------|--------------------------|
+| **Ctrl + Space**      | Abre o autocomplete.     |
+| **Ctrl + e**          | Cancela o autocomplete.  |
+| **Enter**             | Confirma o autocomplete. |
+| **PageDown**          | Scroll Docs (DOWN)       |
+| **PageUp**            | Scroll Docs (UP)         |
+
+## LSP
+Você deve ativar seus **LSP**s em `lua/config/lsp.lua`, adicionando o nome 
+deles ao array `servers`. A instalação dos **LSP**s é **manual**.
