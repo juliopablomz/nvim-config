@@ -7,6 +7,7 @@ testando muitas coisas e não recomendo que você a use.
 * **Neovim 0.9.2**+
 * `tar` e `curl` no seu path (alternativamente, `git`)
 * Um compilador **C** no seu path e **libstdc++** instalado
+* tree-sitter-cli
 
 **Vim-Plug** precisa ser instalado manualmente, depois 
 execute `:PlugInstall` no seu **Neovim**.
