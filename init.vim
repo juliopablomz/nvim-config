@@ -5,12 +5,16 @@ call plug#begin()
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'bluz71/vim-moonfly-colors'
 Plug 'windwp/nvim-autopairs'
+
+Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/cmp-buffer'
 call plug#end()
 
 " loading plugin configs
 lua << EOF
 require'config.treesitter'
 require'config.autopairs'
+require'config.cmp'
 EOF
 
 " Indentation ============================================================

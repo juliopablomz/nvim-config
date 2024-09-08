@@ -15,7 +15,15 @@ execute `:PlugInstall` no seu **Neovim**.
 ## Shortcuts
 A tecla `Mod` configurada é a `<Space>`.
 
-| Keybind     | Descrição             |
-|-------------|-----------------------|
-| **Mod + w** | Salva o buffer atual. |
-| **Mod + q** | Fecha o buffer atual. |
+### Normal Mode
+| Keybind          | Descrição              |
+|------------------|------------------------|
+| **Mod + w**      | Salva o buffer atual.  |
+| **Mod + q**      | Fecha o buffer atual.  |
+
+### Insertion Mode
+| Keybind (CMP)    | Descrição                |
+|------------------|--------------------------|
+| **Ctrl + Space** | Abre o autocomplete.     |
+| **Ctrl + e**     | Cancela o autocomplete.  |
+| **Enter**        | Confirma o autocomplete. |
