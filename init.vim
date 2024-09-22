@@ -89,8 +89,14 @@ autocmd BufRead,BufNewFile *.hpp set filetype=cpp
 " the leader key.
 let mapleader = " "
 
-" save current file using "<leader> + w".
+" save current file.
 nnoremap <leader>w :w<CR>
 
-" close current file using "<leader> + q".
+" close current file.
 nnoremap <leader>q :q<CR>
+
+" go to the definition of the item above the cursor.
+nnoremap gD :lua vim.lsp.buf.definition()<CR>
+
+" go to the declaration of the item above the cursor.
+nnoremap gd :lua vim.lsp.buf.declaration()<CR>

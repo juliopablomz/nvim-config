@@ -20,6 +20,8 @@ A tecla `Mod` configurada é a `<Space>`.
 |------------------|------------------------|
 | **Mod + w**      | Salva o buffer atual.  |
 | **Mod + q**      | Fecha o buffer atual.  |
+| **g + D**        | Goto definition.       |
+| **g + d**        | Goto declaration.      |
 
 ### Insertion Mode
 | Keybind (nvim-cmp)    | Descrição                |
