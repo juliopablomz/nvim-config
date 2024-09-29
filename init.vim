@@ -95,6 +95,9 @@ nnoremap <leader>w :w<CR>
 " close current file.
 nnoremap <leader>q :q<CR>
 
+" rename the label above the cursor.
+nnoremap <leader>r :lua vim.lsp.buf.rename()<CR>
+
 " go to the definition of the item above the cursor.
 nnoremap gD :lua vim.lsp.buf.definition()<CR>
 
