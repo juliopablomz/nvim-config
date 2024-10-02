@@ -1,6 +1,11 @@
 local cmp = require'cmp'
 
 cmp.setup({
+  snippet = {
+    expand = function(args)
+      vim.fn["vsnip#anonymous"](args.body)
+    end,
+  },
   completion = {
     -- The cmp pop-up will not appear unless invoked.
     autocomplete = false,
@@ -14,5 +19,6 @@ cmp.setup({
   }),
   sources = cmp.config.sources({
     { name = 'nvim_lsp' },
+    { name = 'vsnip' },
   }, { { name = 'buffer' } }),
 })
