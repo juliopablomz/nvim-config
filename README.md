@@ -23,6 +23,7 @@ A tecla `Mod` configurada é a `<Space>`.
 | **g + D**        | Goto definition.                   |
 | **g + d**        | Goto declaration.                  |
 | **Mod + r**      | Renomeia o rótulo acima do cursor. |
+| **Mod + f**      | Formata o buffer atual.            |
 
 ### Insertion Mode
 | Keybind (nvim-cmp)    | Descrição                |
