@@ -52,6 +52,10 @@ set fileencoding=utf-8
 colorscheme moonfly
 syntax on
 
+" make the background transparent
+highlight Normal guibg=none
+highlight Normal ctermbg=none guibg=none
+
 " more comfortable file navigation.
 set cursorline
 set number
